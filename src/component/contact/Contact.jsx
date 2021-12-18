@@ -1,4 +1,4 @@
-import "../../sass/component/topbar.scss";
+import "../../sass/component/contact.scss";
 
 const Contact = () => {
   return <div className="contact"></div>;
