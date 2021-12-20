@@ -1,7 +1,5 @@
-import "../../sass/component/work.scss";
-
 const Work = () => {
-  return <div className="work"></div>;
+  return <div className="work" id="work"></div>;
 };
 
 export default Work;

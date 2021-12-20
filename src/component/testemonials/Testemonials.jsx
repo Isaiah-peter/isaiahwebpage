@@ -1,7 +1,5 @@
-import "../../sass/component/testemonials.scss";
-
 const Testemonials = () => {
-  return <div className="testemonials"></div>;
+  return <div className="testemonials" id="testemonials"></div>;
 };
 
 export default Testemonials;
