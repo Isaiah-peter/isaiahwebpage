@@ -1,8 +1,8 @@
 import { Person, Mail } from "@material-ui/icons";
 
-const Topbar = () => {
+const Topbar = ({ menu, setMenu }) => {
   return (
-    <div className="topbar active">
+    <div className={"topbar " + (menu && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -18,7 +18,7 @@ const Topbar = () => {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger">
+          <div className="hamburger" onClick={() => setMenu(!menu)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
