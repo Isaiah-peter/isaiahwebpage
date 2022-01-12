@@ -1,7 +1,5 @@
-import "../../sass/component/portfolio.scss";
-
 const Portfolio = () => {
-  return <div className="portfolio"></div>;
+  return <div className="portfolio" id="portfolio"></div>;
 };
 
 export default Portfolio;
