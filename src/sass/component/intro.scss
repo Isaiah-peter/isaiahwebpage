@@ -41,10 +41,16 @@
 
       h2{
         font-size: 35px;
+
       }
 
       h3{
         font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: royalblue;
+        }
       }
 
     }

@@ -11,10 +11,10 @@ const Intro = () => {
           <h2>Hi there!</h2>
           <h1>Peter Isaiah</h1>
           <h3>
-            freelance<span></span>
+            freelance <span>Designer</span>
           </h3>
         </div>
-        <a href="#potfolio">
+        <a href="#portfolio">
           <img src="img\down-arrow.png" alt />
         </a>
       </div>
