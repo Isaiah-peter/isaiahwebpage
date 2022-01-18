@@ -1,4 +1,19 @@
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
+
 const Intro = () => {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      strings: [
+        "Designer",
+        "React Frontend Developer",
+        "Golang Backend Developer",
+      ],
+    });
+  }, []);
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -11,7 +26,7 @@ const Intro = () => {
           <h2>Hi there!</h2>
           <h1>Peter Isaiah</h1>
           <h3>
-            freelance <span>Designer</span>
+            freelance <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">

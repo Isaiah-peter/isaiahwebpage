@@ -51,8 +51,12 @@
           font-size: inherit;
           color: royalblue;
         }
-      }
 
+        .ityped-cursor{
+          animation: blink 1s infinite ;
+        }
+      }
+      
     }
 
     a {
