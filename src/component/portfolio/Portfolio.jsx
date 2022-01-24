@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
+import { webSite, reactApp, golangApp, workWith, mediaApp } from "../../data";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "featured",
@@ -25,6 +27,9 @@ const Portfolio = () => {
       title: "Branding",
     },
   ];
+
+  useEffect(() => {}, []);
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
