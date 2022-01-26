@@ -15,20 +15,40 @@ const Portfolio = () => {
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "media",
+      title: "Media App",
     },
     {
-      id: "desing",
-      title: "Desing",
+      id: "react",
+      title: "React Disigns",
     },
     {
-      id: "branding",
-      title: "Branding",
+      id: "backend",
+      title: "Golang-React App",
     },
   ];
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(workWith);
+        break;
+      case "web":
+        setData(webSite);
+        break;
+      case "media":
+        setData(mediaApp);
+        break;
+      case "react":
+        setData(reactApp);
+        break;
+      case "backend":
+        setData(golangApp);
+        break;
+      default:
+        setData(workWith);
+    }
+  }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -44,30 +64,12 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="img\first-work.png" alt="" />
-          <h3>first work</h3>
-        </div>
-        <div className="item">
-          <img src="img\first-work.png" alt="" />
-          <h3>first work</h3>
-        </div>
-        <div className="item">
-          <img src="img\first-work.png" alt="" />
-          <h3>first work</h3>
-        </div>
-        <div className="item">
-          <img src="img\second-work.png" alt="" />
-          <h3>first work</h3>
-        </div>
-        <div className="item">
-          <img src="img\first-work.png" alt="" />
-          <h3>first work</h3>
-        </div>
-        <div className="item">
-          <img src="img\third-image.png" alt="" />
-          <h3>first work</h3>
-        </div>
+        {data.map((item) => (
+          <div className="item">
+            <img src={item.img} alt="" />
+            <h3>{item.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
