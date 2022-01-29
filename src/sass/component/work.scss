@@ -3,6 +3,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  .arrow {
+    color: white;
+    font-size: 50px;
+    font-weight: 300 !important;
+    position: absolute;
+    cursor: pointer;
+
+    &.left{
+      left: 60px
+    }
+    &.right{
+      right: 60px;
+    }
+  }
 
   .slider{
     height: 350px;
@@ -85,4 +101,6 @@
       }
     }
   }
+
+  
 }
